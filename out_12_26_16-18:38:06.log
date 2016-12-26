@@ -1,0 +1,24 @@
+
+ 128 Matrix dimension : 128, data samples : 16384 
+The platform number is :1 
+	Vendor: NVIDIA Corporation
+Event0 (IO_WRITE_BUFFER)               
+	Queued:     2092448               
+	Submitted:  2105984               
+	Started:    2113152               
+	Completed:  2121344
+Event1 (IO_WRITE_BUFFER)               
+	Queued:     2135424               
+	Submitted:  2158624               
+	Started:    2165376               
+	Completed:  2173568
+Event2 (Kernel)               
+	Queued:     2188992               
+	Submitted:  2191840               
+	Started:    2198144               
+	Completed:  2604672
+Event3 (IO_READ_BUFFER)               
+	Queued:     2610464               
+	Submitted:  2614528               
+	Started:    2619520               
+	Completed:  2626272
