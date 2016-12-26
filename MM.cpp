@@ -54,6 +54,12 @@ int main(int argc, char** argv)
 
 	ret = clGetPlatformIDs(num_entries, &platform, &num_platforms);
 
+	/*
+	std::cout << platform << std::endl;
+	std::cout <<  CL_PLATFORM_VENDOR << std::endl;
+	std::cout << CL_DEVICE_VENDOR_ID << std::endl;
+	*/
+
 	CHECK_STATUS(ret, "Error: in getting the platform IDs \n");
 	printf("The platform number is :%d \n", num_platforms);
 
@@ -72,7 +78,7 @@ int main(int argc, char** argv)
 	//------------------------------------------------------------
 	cl_device_id devices = NULL;
 	cl_uint num_devices;
-	ret = clGetDeviceIDs (platform, CL_DEVICE_TYPE_CPU, num_entries, &devices, &num_devices);
+	ret = clGetDeviceIDs (platform, CL_DEVICE_TYPE_GPU, num_entries, &devices, &num_devices);
 
 	CHECK_STATUS(ret, "Error: in getting the Device IDs" );
 
