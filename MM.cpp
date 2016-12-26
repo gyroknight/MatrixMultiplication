@@ -48,7 +48,7 @@ int main(int argc, char** argv)
 	//first we have to get the platform we have in hand
 	//-------------------------------------------------------------
 	cl_int ret;
-	cl_platform_id platform = NULL;
+	cl_platform_id platform;
 	cl_uint num_platforms;
 	cl_uint num_entries = 1;
 
@@ -76,7 +76,7 @@ int main(int argc, char** argv)
 	//------------------------------------------------------------
 	//get the device we want
 	//------------------------------------------------------------
-	cl_device_id devices = NULL;
+	cl_device_id devices;
 	cl_uint num_devices;
 	ret = clGetDeviceIDs (platform, CL_DEVICE_TYPE_GPU, num_entries, &devices, &num_devices);
 
