@@ -5,6 +5,7 @@
 #include <CL/cl.h>
 #include <time.h>
 #include <algorithm>
+#include <unistd.h>
 
 #ifdef _WIN32
 #include <Windows.h>
