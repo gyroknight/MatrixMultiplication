@@ -1,6 +1,7 @@
 Dependencies:
 
 NumPy and Pandas python modules
+
 nvidia-opencl-dev (if using NVIDIA GPU)
 
 Use this command to compile the source:
